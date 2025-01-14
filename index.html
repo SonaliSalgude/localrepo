@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sheets Mimic</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toolbar">
+    <button onclick="applyFormat('bold')">Bold</button>
+    <button onclick="applyFormat('italic')">Italic</button>
+    <button onclick="applyFormat('uppercase')">UPPER</button>
+    <button onclick="applyFormat('lowercase')">lower</button>
+    <button onclick="applyFormat('trim')">Trim</button>
+    <button onclick="addRow()">Add Row</button>
+    <button onclick="addColumn()">Add Column</button>
+    <button onclick="removeDuplicates()">Remove Duplicates</button>
+    <input type="text" id="findText" placeholder="Find">
+    <input type="text" id="replaceText" placeholder="Replace">
+    <button onclick="findAndReplace()">Find & Replace</button>
+    <input type="text" id="formulaBar" placeholder="Enter formula (e.g., =SUM(A1:A5))">
+    <button onclick="calculateFormula()">Calculate</button>
+  </div>
+  <div id="spreadsheet"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
