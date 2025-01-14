@@ -1,1 +1,18 @@
+# CDP Support Agent Chatbot
 
+This chatbot helps answer questions about Customer Data Platforms (CDPs) such as Segment, mParticle, Lytics, and Zeotap. It leverages Hugging Face's Transformers library for natural language processing.
+
+## Features
+- Answers "how-to" questions related to specific CDPs.
+- Provides cross-CDP comparisons.
+- Handles advanced queries for detailed guidance.
+- Detects and filters irrelevant questions.
+
+## Requirements
+- Python 3.7+
+- Required Python libraries: `transformers`, `torch`
+
+## Setup
+1. Install dependencies:
+   ```bash
+   pip install transformers torch
